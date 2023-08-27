@@ -759,6 +759,10 @@ video {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -897,6 +901,10 @@ video {
   padding-top: 0.25rem;
 }
 
+.pb-0 {
+  padding-bottom: 0px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -943,14 +951,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.leading-\[3rem\] {
-  line-height: 3rem;
-}
-
-.leading-\[4\.6rem\] {
-  line-height: 4.6rem;
 }
 
 .leading-\[4\.7rem\] {
@@ -1021,14 +1021,6 @@ button {
 
   .show {
     opacity: 1 !important;
-  }
-
-  #submit-comment.left-side {
-    right: 50% !important;
-  }
-
-  #submit-comment.right-side {
-    left: 50% !important;
   }
 }
 

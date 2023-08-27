@@ -16,10 +16,10 @@
     <nav class="bg-primary flex justify-between px-4 py-2 text-white text-xl">
         <i class="sm:!hidden pt-1 fa fa-navicon" id="open-menu"></i>
         <ul class="hidden sm:flex">
-            <li class="px-4 lg:px-8">چرا ما؟</li>
-            <li class="px-4 lg:px-8">آمار</li>
-            <li class="px-4 lg:px-8">رفع مشکل</li>
-            <li class="px-4 lg:px-8">نطرسنجی</li>
+            <li class="px-4 lg:px-8"><a href="#information">آمار</a></li>
+            <li class="px-4 lg:px-8"><a href="#why-us">چرا ما؟</a></li>
+            <li class="px-4 lg:px-8"><a href="#fixing-problem">ثبت مشکل</a></li>
+            <li class="px-4 lg:px-8"><a href="#comments">نظرات</a></li>
         </ul>
         <b>PROBLEM FIXER</b>
     </nav>
@@ -45,7 +45,7 @@
     <section id="information"
         class="container mx-auto flex flex-col px-6 py-2 justify-between space-y-8 flex-wrap sm:flex-row">
         <div class="info h-16 flex mt-8 pr-4 sm:w-[50%] xl:w-[25%]" data-aos="zoom-in">
-            <div class="w-16 h-16 rounded-lg bg-lightGray text-4xl text-center leading-[4.6rem] text-primary">
+            <div class="w-16 h-16 flex justify-center items-center rounded-lg bg-lightGray text-4xl text-primary">
                 <i class="fa fa-user"></i>
             </div>
             <div class="flex flex-col justify-between px-4">
@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="info h-16 flex mt-8 pr-4 md:w-[50%] xl:w-[25%]" data-aos="zoom-in">
-            <div class="w-16 h-16 rounded-lg bg-lightGray text-4xl text-center leading-[4.6rem] text-primary">
+            <div class="w-16 h-16 flex justify-center items-center rounded-lg bg-lightGray text-4xl text-primary">
                 <i class="fa fa-check"></i>
             </div>
             <div class="flex flex-col justify-between px-4">
@@ -63,7 +63,7 @@
             </div>
         </div>
         <div class="info h-16 flex mt-8 pr-4 sm:w-[50%] xl:w-[25%]" data-aos="zoom-in">
-            <div class="w-16 h-16 rounded-lg bg-lightGray text-4xl text-center leading-[4.6rem] text-primary">
+            <div class="w-16 h-16 flex justify-center items-center rounded-lg bg-lightGray text-4xl text-primary">
                 <i class="fa fa-cogs"></i>
             </div>
             <div class="flex flex-col justify-between px-4">
@@ -72,7 +72,7 @@
             </div>
         </div>
         <div class="info h-16 flex mt-8 pr-4 sm:w-[50%] xl:w-[25%]" data-aos="zoom-in">
-            <div class="w-16 h-16 rounded-lg bg-lightGray text-4xl text-center leading-[4.6rem] text-primary">
+            <div class="w-16 h-16 flex justify-center items-center rounded-lg bg-lightGray text-4xl text-primary">
                 <i class="fa fa-child"></i>
             </div>
             <div class="flex flex-col justify-between px-4">
@@ -81,7 +81,7 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-col-reverse items-center my-16 md:flex-row">
+    <section id="why-us" class="flex flex-col-reverse items-center my-16 md:flex-row">
         <img data-aos="fade-up" data-aos-duration="500" src="img/IMG_20230814_132624_312.jpg" alt="why-us"
             class="w-[70%] shadow-3xl md:w-1/3">
         <div class="description w-[70%] mb-8 md:mr-[12rem] xl:mr-[16rem]">
@@ -95,10 +95,11 @@
                 ندارم</h2>
         </div>
     </section>
-    <section class="my-16 flex flex-col items-center md:flex-row md:items-start md:px-8">
+    <section id="fixing-problem" class="my-16 flex flex-col items-center md:flex-row md:items-start md:px-8">
         <form class="w-[70%] md: w-1/2">
             <label for="problem" class="text-xl">مشکل خود را وارد کنید:</label>
-            <textarea id="user-problem" class="w-full h-64 my-4 border-2 border-solid border-lightGray p-4"></textarea>
+            <textarea id="user-problem"
+                class="w-full h-64 my-4 border-2 border-solid border-lightGray p-4 text-xl"></textarea>
 
             <label for="user-name" class="text-xl">نام خود را وارد کنید: </label>
             <input type="text" id="user-name" class="w-full my-4 border-2 border-solid border-lightGray p-4">
@@ -118,7 +119,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col">
+    <section id="comments" class="flex flex-col">
         <h2 class="text-4xl pr-4 pb-16" data-aos="fade-left">نظرات: </h2>
         <div class="swiper mySwiper w-[70%] h-[15rem] mx-auto">
             <div class="swiper-wrapper">
@@ -211,7 +212,8 @@
                     نظر</button>
             </div>
 
-            <div class="w-full flex justify-between mt-8 duration-300 !opacity-0 md:w-[45%] md:flex-col md:justify-start">
+            <div
+                class="w-full flex justify-between mt-8 duration-300 !opacity-0 md:w-[45%] md:flex-col md:justify-start">
                 <div>
                     <span id="poll-reaction" class="text-xl"></span>
                     <span class="text-4xl animate-fade text-primary">|</span>
@@ -226,18 +228,21 @@
         <div class="col">
             <b class="text-2xl">صفحه ها</b>
             <ul class="-translate-x-6 mt-2 space-y-2">
-                <li class="duration-300 hover:-translate-x-2">آمار</li>
-                <li class="duration-300 hover:-translate-x-2">چرا ما</li>
-                <li class="duration-300 hover:-translate-x-2">رفع مشکل</li>
-                <li class="duration-300 hover:-translate-x-2">نظرات</li>
+                <li class="duration-300 hover:-translate-x-2"><a href="#information">آمار</a></li>
+                <li class="duration-300 hover:-translate-x-2"><a href="#why-us">چرا ما؟</a></li>
+                <li class="duration-300 hover:-translate-x-2"><a href="#fixing-problem">رفع مشکل</a></li>
+                <li class="duration-300 hover:-translate-x-2"><a href="#comments">نظرات</a></li>
             </ul>
         </div>
         <div class="col">
             <b class="text-2xl">ارتباط</b>
             <ul class="-translate-x-6 mt-2 space-y-2">
-                <li class="duration-300 hover:-translate-x-2 mt-2">تلگرام</li>
-                <li class="duration-300 hover:-translate-x-2 mt-2">یوتوب</li>
-                <li class="duration-300 hover:-translate-x-2 mt-2">گیت هاب</li>
+                <li class="duration-300 hover:-translate-x-2 mt-2"><a href="https://t.me/mahdiramezani_8">تلگرام</a>
+                </li>
+                <li class="duration-300 hover:-translate-x-2 mt-2"><a
+                        href="https://www.youtube.com/@CreativityHousee">یوتوب</a></li>
+                <li class="duration-300 hover:-translate-x-2 mt-2"><a href="https://github.com/MahdiRamezani8">گیت
+                        هاب</a></li>
             </ul>
         </div>
         <div class="col space-y-4">
@@ -247,17 +252,23 @@
                 ساخته شده توسط مهدی رمضانی
             </p>
             <div class="flex">
-                <div class="w-10 h-10 bg-white text-primary text-center rounded-md
-                 leading-[3rem] text-2xl  duration-300 hover:bg-lightPrimary hover:text-white">
-                    <i class="fa fa-telegram"></i>
-                </div>
-                <div class="w-10 h-10 bg-white text-primary text-center rounded-md
-                 leading-[3rem] text-2xl mx-4 duration-300 hover:bg-lightPrimary hover:text-white">
-                    <i class="fa fa-youtube-play"></i>
+                <div
+                    class="w-10 h-10 bg-white flex justify-center items-center text-primary rounded-md text-2xl duration-300 hover:bg-lightPrimary hover:text-white">
+                    <a href="https://t.me/mahdiramezani_8" class="flex justify-center items-center">
+                        <i class="fa fa-telegram"></i>
+                    </a>
                 </div>
                 <div
-                    class="w-10 h-10 bg-white text-primary text-center rounded-md leading-[3rem] text-2xl duration-300 hover:bg-lightPrimary hover:text-white">
-                    <i class="fa fa-github"></i>
+                    class="w-10 h-10 flex justify-center items-center bg-white text-primary rounded-md text-2xl mx-4 duration-300 hover:bg-lightPrimary hover:text-white">
+                    <a href="https://www.youtube.com/@CreativityHousee" class="flex justify-center items-center">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+                <div
+                    class="w-10 h-10 flex justify-center items-center bg-white text-primary rounded-md text-2xl duration-300 hover:bg-lightPrimary hover:text-white">
+                    <a href="https://github.com/MahdiRamezani8" class="flex justify-center items-center">
+                        <i class="fa fa-github"></i>
+                    </a>
                 </div>
             </div>
         </div>

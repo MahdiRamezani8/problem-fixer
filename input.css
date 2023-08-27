@@ -37,13 +37,4 @@ button {
     .show {
         @apply !opacity-100;
     }
-
-    #submit-comment.left-side {
-        @apply  !right-[50%];
-
-    }
-
-    #submit-comment.right-side {
-        @apply  !left-[50%];
-    }
 }
