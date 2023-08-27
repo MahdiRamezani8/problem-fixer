@@ -3,12 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: lalezar;
-    src: url(fonts/Lalezar-Regular.ttf);
-}
-
-* {
-    font-family: lalezar;
+    font-family: lalezarFont;
+    src: url(../fonts/Lalezar.ttf) format("opentype");
 }
 
 li,

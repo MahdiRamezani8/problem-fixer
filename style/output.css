@@ -901,12 +901,12 @@ video {
   padding-top: 0.25rem;
 }
 
-.pb-0 {
-  padding-bottom: 0px;
-}
-
 .text-center {
   text-align: center;
+}
+
+.font-main {
+  font-family: lalezarFont;
 }
 
 .text-2xl {
@@ -981,13 +981,9 @@ video {
 }
 
 @font-face {
-  font-family: lalezar;
+  font-family: lalezarFont;
 
-  src: url(fonts/Lalezar-Regular.ttf);
-}
-
-* {
-  font-family: lalezar;
+  src: url(../fonts/Lalezar.ttf) format("opentype");
 }
 
 li,
