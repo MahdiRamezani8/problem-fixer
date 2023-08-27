@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: lalezar;
+    src: url(fonts/Lalezar-Regular.ttf);
+}
+
+* {
+    font-family: lalezar;
+}
+
+li,
+a,
+i,
+button {
+    cursor: pointer;
+}
+
+#information {
+    counter-reset: counter;
+}
+
+@layer component {
+    #menu-MB.active {
+        @apply  !grid-rows-show py-2;
+        background-color: #ff4400e1;
+    }
+
+    .info::after {
+        counter-increment: counter;
+        content: "0"counter(counter);
+        @apply text-5xl text-lightGray mr-auto;
+    }
+
+    .show {
+        @apply !opacity-100;
+    }
+
+    #submit-comment.left-side {
+        @apply  !right-[50%];
+
+    }
+
+    #submit-comment.right-side {
+        @apply  !left-[50%];
+    }
+}
